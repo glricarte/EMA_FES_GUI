@@ -1,0 +1,1212 @@
+<!DOCTYPE html>
+<html class='no-js' >
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		
+		
+		<!--==================================================================
+			Your Title
+		==================================================================-->
+		<title>FES-Rehabilitation</title>
+		
+		
+		<!--==================================================================
+			CSS Stylesheets
+		==================================================================-->
+		<link rel='stylesheet' type='text/css' href='bootstrap/css/bootstrap.min.css' >
+		<link rel='stylesheet' type='text/css' href='css/ionicons.min.css' >
+		<link rel='stylesheet' type='text/css' href='css/owl.carousel.css' >
+		<link rel='stylesheet' type='text/css' href='css/magnific-popup.css' >
+		<link rel='stylesheet' type='text/css' href='css/style.css' >
+		
+<!--  INICIA TESTE -->
+	<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="http://static.robotwebtools.org/EventEmitter2/current/eventemitter2.min.js"></script>
+<script type="text/javascript" src="http://static.robotwebtools.org/roslibjs/current/roslib.min.js"></script>
+		<script type="text/javascript">
+    // Connecting to ROS
+    // -----------------
+
+
+</script>
+		
+<!-- TERMINA O HEAD DO TESTE -->		
+		
+		
+		
+		
+
+		<!-- inicia head circle range	-->
+	 <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="dist/main.css" rel="stylesheet">
+ 
+<!-- fim head circle range	-->
+
+<!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	 crossorigin="anonymous">-->
+
+
+	<script type="text/javascript" src="https://static.robotwebtools.org/roslibjs/current/roslib.min.js">
+
+	</script>
+	
+	
+	<script src="https://cdn.jsdelivr.net/npm/vue">
+
+	</script>
+				
+</head>
+	<body>
+		
+		<!--page-borders-->
+		<div class='page-borders' >
+			<div class='left' ></div>
+			<div class='right' ></div>
+		</div>
+		
+		<!--menu-btn-->
+		<a href='#' class='menu-btn' >
+			<span class='lines' >
+				<span class='l1' ></span>
+				<span class='l2' ></span>
+				<span class='l3' ></span>
+			</span>
+		</a>
+		
+		
+		<!--menu-->
+		<nav class='menu' >
+			<ul>
+				<li>
+					<a href='#intro' >
+						Início
+					</a>
+				</li>
+				<li>
+					<a href='#features' >
+						Monitoramento			
+					</a>
+				</li>
+				<li>
+					<a href='#screenshots' >
+						Parâmetros
+					</a>
+				</li>
+				
+			</ul>
+		</nav>
+		
+		<!--==================================================================
+			Preloader
+		==================================================================-->
+		<div id='preloader' >
+			<div class='loader' >
+				<img src='img/loader.gif' alt>
+			</div>
+		</div>
+		
+		
+		<!--==================================================================
+			Main Wrapper
+		==================================================================-->
+		<div id='main-wrapper' >
+			
+			
+			<!--==================================================================
+				Intro Section
+			==================================================================-->
+			<section id='intro' class='section intro-section' >
+				<div class='container' >
+					<div class='row intro-cols' >
+						<div class='col-md-6 col-md-push-6' >
+							<div class='phone' >
+								<div class='phone-img' >
+									<img src='img/Assinatura-Site-Portugues.png' alt>
+								</div>
+							</div>
+						</div>
+					<div class='col-md-6 col-md-pull-6' >
+							<div class='v-align' >
+								<div class='inner' >
+							
+									<div class='intro-text' >
+										
+										<p>
+											FES-Cycling
+										</p>
+									
+									
+				
+
+
+	<div id="app" class="container">
+		
+		<div class="row" style="max-height:200px;">
+			
+				<h4>Connection status</h4>
+				<p class="text-danger" v-if="!connected">Not connected!</p>
+				<p class="text-success" v-if="connected">Connected!</p>
+				<label>Websocket server address</label>
+                <input id="wsaddress" type="text" v-model="ws_address" />
+                <br><br>
+                <button :disabled="loading" class="btn btn-danger" @click="disconnect" v-if="connected">Disconnect!</button>
+                <button :disabled="loading" class="btn btn-success" @click="connect" v-else>Connect!</button>
+			
+			
+				<h4>Log messages</h4>
+                <div style ="overflow-y: auto;height: 300px;">
+                    <p v-for="log of logs">{{ log }}</p>
+                </div>
+			
+		</div>
+
+   </div>
+
+
+
+
+
+
+
+			
+									
+
+
+	</div>
+									</div>
+							
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			
+			<!--==================================================================
+				Features Section -- 1
+			==================================================================-->
+		
+			<section id='features' class='section features-section' >
+	
+							
+				<div class='container' >
+						<div class='row' >
+						<div class='col-md-8 col-md-offset-2' >
+						<!--	<div class='features-text' >-->
+								<h2>Monitoramento</h2>
+								<p>
+									Velocidade angular em tempo de execução. <span id="Display-vel" ></span>
+								</p>
+							<br>
+							<br>
+						
+						<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+						<div id="chartContainer" style="height: 300px; width: 100%;"></div>
+<!--							<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>-->
+						
+						<!--	</div>-->
+						</div>
+					</div>
+				
+					
+					</div>
+			
+						
+							
+				
+					
+		
+			</section>
+			
+			
+			<!--==================================================================
+				Features Section -- 2
+			==================================================================-->
+			<section id='features-2' class='section features-2-section bg-lightgray' >
+			<div class='container' >
+						<div class='row' >
+						<div class='col-md-8 col-md-offset-2' >
+							
+								<h2>Monitoramento</h2>
+								<p>
+									Ângulo do pedivela em tempo de execução:   <span id="Display-angle" ></span>
+								</p>
+							<br>=
+							<br>
+		 <canvas id="myCanvas" width: "100%" height="300px" >Canvas is not supported in your browser
+    </canvas>
+   
+    <br />
+
+				
+					</div>
+				
+					</div>
+						
+					
+			</div>	
+			</section>
+			
+			
+			
+			
+			
+			<!--==================================================================
+				Screenshots Section
+			==================================================================-->
+			<section id='screenshots' class='section features-3-section' >
+				
+				
+				
+				
+				
+				
+				<div class='container' >
+					<div class='top-section-header' >
+						<br>
+						<br>						
+						<h2>Parâmetros</h2>
+						<p>Modifique os valores em tempo de execução.</p>
+					</div>
+					
+	
+	<br>
+	<br>
+	<br>
+	
+	 <div class="tab">
+	  
+	   <input style ="display: none;" type="radio" name="tabs" id="tab5" checked>
+      <label id ="tab5lab" for="tab5">PRE SET</label> 
+	 
+      <input style ="display: none;" type="radio" name="tabs" id="tab1" >
+      <label id ="tab1lab" for="tab1">CHANNEL 1/2</label>
+ 
+      <input style ="display: none;" type="radio" name="tabs" id="tab2">
+      <label id ="tab2lab" for="tab2">CHANNEL 3/4</label>
+ 
+      <input  style ="display: none;" type="radio" name="tabs" id="tab3">
+      <label id ="tab3lab" for="tab3">CHANNEL 5/6</label>
+ 
+      <input style ="display: none;" type="radio" name="tabs" id="tab4">
+      <label id ="tab4lab" for="tab4">CHANNEL 7/8</label>
+ 
+      <div class="tabs">
+        <div class="content">
+          <h2>Channel 1 and 2</h2>
+          <div>
+          <div class="row">
+	<label class="containerch">Channel 1 and 2 Current Linked
+  	<input onclick="Alterbool(Ch12_Link_Current)" id="Ch12_Link_Current" type="checkbox">
+  	<span class="checkmark"></span>
+	</label>
+<br>
+</div>
+ 	 	<div class="row">
+ 	 
+			<div >
+			  Channel 1 Current
+			  <div class="range-slider">
+   
+			   <input  id="myRangech1curr" class="slider" type="range" value="0" min="0" max="110">
+    			<p>Value:<span id="democh1curr"></p>
+    				  		
+  				</div>
+  	
+  			<div class="box-minmax">
+  		<button onclick="Decrease(democh1curr,myRangech1curr,'Ch1_Current')" :disabled="loading || !connected" class="btn btn-danger">Decrease</button>
+  		 <button :disabled="loading || !connected"class="btn btn-success" onclick="Increase(democh1curr,myRangech1curr,'Ch1_Current')">Increase</button>
+  		</div>
+  
+	</div>
+<br>
+
+	
+		</div>
+<div class="row">
+ 	 
+			<div >
+			  Channel 2 Current
+			  <div class="range-slider">
+   
+			   <input  id="myRangech2curr" class="slider" type="range" value="0" min="0" max="110">
+    			<p>Value:<span id="democh2curr"></p>
+    				  		
+  				</div>
+  	
+  			<div class="box-minmax">
+  		<button onclick="Decrease(democh2curr,myRangech2curr,'Ch2_Current')" :disabled="loading || !connected" class="btn btn-danger">Decrease</button>
+  		 <button :disabled="loading || !connected"class="btn btn-success" onclick="Increase(democh2curr,myRangech2curr,'Ch2_Current')">Increase</button>
+  		</div>
+  
+	</div>
+<br>
+
+	
+		</div>
+		
+	<div class="row">
+ 	 
+			<div >
+			  Channel 1 Pulse Width
+			  <div class="range-slider">
+   
+			   <input  id="myRangech1pw" class="slider" type="range" value="0" min="0" max="500">
+    			<p>Value:<span id="democh1pw"></p>
+    				  		
+  				</div>
+  	
+  		<div class="box-minmax">
+  		<button onclick="Decrease(democh1pw,myRangech1pw,'Ch1_Pulse_Width')" :disabled="loading || !connected" class="btn btn-danger">Decrease</button>
+  		 <button :disabled="loading || !connected"class="btn btn-success" onclick="Increase(democh1pw,myRangech1pw,'Ch1_Pulse_Width')">Increase</button>
+  		</div>
+  
+	</div>
+<br>
+	</div>
+<div class="row">
+ 	 
+			<div>
+			  Channel 2 Pulse Width
+			  <div class="range-slider">
+   
+			   <input  id="myRangech2pw" class="slider" type="range" value="0" min="0" max="500">
+    			<p>Value:<span id="democh2pw"></p>
+    				  		
+  				</div>
+  	
+  			<div class="box-minmax">
+  		<button onclick="Decrease(democh2pw,myRangech2pw,'Ch2_Pulse_Width')" :disabled="loading || !connected" class="btn btn-danger">Decrease</button>
+  		 <button :disabled="loading || !connected"class="btn btn-success" onclick="Increase(democh2pw,myRangech2pw,'Ch2_Pulse_Width')">Increase</button>
+  		</div>
+  
+	</div>
+<br>
+
+	
+		</div>
+		  <div class="row">
+<label class="containerch">Channel 1 and 2 Angle Linked
+  	<input onclick="Alterbool(Ch12_Link_Angle)"  id="Ch12_Link_Angle" type="checkbox">
+  	<span class="checkmark"></span>
+	</label>
+</div>
+ 
+<div class="row">
+ 	 
+			<div >
+			  Channel 1 Minimum Angle
+			  <div class="range-slider">
+   
+			   <input  id="myRangech1minang" class="slider" type="range" value="0" min="0" max="360">
+    			<p>Value:<span id="democh1minang"></p>
+    				  		
+  				</div>
+  	
+  			<div class="box-minmax">
+  		<button onclick="Decrease(democh1minang,myRangech1minang,'Ch1_Angle_Min')" :disabled="loading || !connected" class="btn btn-danger">Decrease</button>
+  		 <button :disabled="loading || !connected"class="btn btn-success" onclick="Increase(democh1minang,myRangech1minang,'Ch1_Angle_Min')">Increase</button>
+  		</div>
+  
+	</div>
+<br>
+
+	
+		</div>
+
+
+<div class="row">
+ 	 
+			<div >
+			  Channel 1 Maximum Angle
+			  <div class="range-slider">
+   
+			   <input  id="myRangech1maxang" class="slider" type="range" value="0" min="0" max="360">
+    			<p>Value:<span id="democh1maxang"></p>
+    				  		
+  				</div>
+  	
+  			<div class="box-minmax">
+  		<button onclick="Decrease(democh1maxang,myRangech1maxang,'Ch1_Angle_Max')" :disabled="loading || !connected" class="btn btn-danger">Decrease</button>
+  		 <button :disabled="loading || !connected"class="btn btn-success" onclick="Increase(democh1maxang,myRangech1maxang,'Ch1_Angle_Max')">Increase</button>
+  		</div>
+  
+	</div>
+<br>
+
+	
+		</div>
+
+<div class="row">
+ 	 
+			<div >
+			  Channel 2 Minimum Angle
+			  <div class="range-slider">
+   
+			   <input  id="myRangech2minang" class="slider" type="range" value="0" min="0" max="360">
+    			<p>Value:<span id="democh2minang"></p>
+    				  		
+  				</div>
+  	
+  			<div class="box-minmax">
+  		<button onclick="Decrease(democh2minang,myRangech2minang,'Ch2_Angle_Min')" :disabled="loading || !connected" class="btn btn-danger">Decrease</button>
+  		 <button :disabled="loading || !connected"class="btn btn-success" onclick="Increase(democh2minang,myRangech2minang,'Ch2_Angle_Min')">Increase</button>
+  		</div>
+  
+	</div>
+<br>
+
+	
+		</div>
+		<div class="row">
+ 	 
+			<div >
+			  Channel 2 Maximum Angle
+			  <div class="range-slider">
+   
+			   <input  id="myRangech2maxang" class="slider" type="range" value="0" min="0" max="360">
+    			<p>Value:<span id="democh2maxang"></p>
+    				  		
+  				</div>
+  	
+  			<div class="box-minmax">
+  		<button onclick="Decrease(democh2maxang,myRangech2maxang,'Ch2_Angle_Max')" :disabled="loading || !connected" class="btn btn-danger">Decrease</button>
+  		 <button :disabled="loading || !connected"class="btn btn-success" onclick="Increase(democh2maxang,myRangech2maxang,'Ch2_Angle_Max')">Increase</button>
+  		</div>
+  
+	</div>
+<br>
+
+	
+		</div>
+</div>
+
+
+        </div>
+         
+        <div class="content">
+          <h2>Channel 3 and 4</h2>
+          <div>
+          <div class="row">
+	<label class="containerch">Channel 3 and 4 Current Linked
+  	<input  onclick="Alterbool(Ch34_Link_Current)" id="Ch34_Link_Current" type="checkbox">
+  	<span class="checkmark"></span>
+	</label>
+<br>
+</div>
+ 	 	<div class="row">
+ 	 
+			<div >
+			  Channel 3 Current
+			  <div class="range-slider">
+   
+			   <input  id="myRangech3curr" class="slider" type="range" value="0" min="0" max="110">
+    			<p>Value:<span id="democh3curr"></p>
+    				  		
+  				</div>
+  	
+  			<div class="box-minmax">
+  		<button onclick="Decrease(democh3curr,myRangech3curr,'Ch3_Current')" :disabled="loading || !connected" class="btn btn-danger">Decrease</button>
+  		 <button :disabled="loading || !connected"class="btn btn-success" onclick="Increase(democh3curr,myRangech3curr,'Ch3_Current')">Increase</button>
+  		</div>
+  
+	</div>
+<br>
+
+	
+		</div>
+<div class="row">
+ 	 
+			<div >
+			  Channel 4 Current
+			  <div class="range-slider">
+   
+			   <input  id="myRangech4curr" class="slider" type="range" value="0" min="0" max="110">
+    			<p>Value:<span id="democh4curr"></p>
+    				  		
+  				</div>
+  	
+  			<div class="box-minmax">
+  		<button onclick="Decrease(democh4curr,myRangech4curr,'Ch4_Current')" :disabled="loading || !connected" class="btn btn-danger">Decrease</button>
+  		 <button :disabled="loading || !connected"class="btn btn-success" onclick="Increase(democh4curr,myRangech4curr,'Ch4_Current')">Increase</button>
+  		</div>
+  
+	</div>
+<br>
+
+	
+		</div>
+		
+	<div class="row">
+ 	 
+			<div >
+			  Channel 3 Pulse Width
+			  <div class="range-slider">
+   
+			   <input  id="myRangech3pw" class="slider" type="range" value="0" min="0" max="500">
+    			<p>Value:<span id="democh3pw"></p>
+    				  		
+  				</div>
+  	
+  			<div class="box-minmax">
+  		<button onclick="Decrease(democh3pw,myRangech3pw,'Ch3_Pulse_Width')" :disabled="loading || !connected" class="btn btn-danger">Decrease</button>
+  		 <button :disabled="loading || !connected"class="btn btn-success" onclick="Increase(democh3pw,myRangech3pw,'Ch3_Pulse_Width')">Increase</button>
+  		</div>
+  
+	</div>
+<br>
+	</div>
+<div class="row">
+ 	 
+			<div>
+			  Channel 4 Pulse Width
+			  <div class="range-slider">
+   
+			   <input  id="myRangech4pw" class="slider" type="range" value="0" min="0" max="500">
+    			<p>Value:<span id="democh4pw"></p>
+    				  		
+  				</div>
+  	
+  			<div class="box-minmax">
+  		<button onclick="Decrease(democh4pw,myRangech4pw,'Ch4_Pulse_Width')" :disabled="loading || !connected" class="btn btn-danger">Decrease</button>
+  		 <button :disabled="loading || !connected"class="btn btn-success" onclick="Increase(democh4pw,myRangech4pw,'Ch4_Pulse_Width')">Increase</button>
+  		</div>
+  
+	</div>
+<br>
+
+	
+		</div>
+		  <div class="row">
+<label class="containerch">Channel 3 and 4 Angle Linked
+  	<input onclick="Alterbool(Ch34_Link_Angle)" id="Ch34_Link_Angle" type="checkbox">
+  	<span class="checkmark"></span>
+	</label>
+</div>
+ 
+<div class="row">
+ 	 
+			<div >
+			  Channel 3 Minimum Angle
+			  <div class="range-slider">
+   
+			   <input  id="myRangech3minang" class="slider" type="range" value="0" min="0" max="360">
+    			<p>Value:<span id="democh3minang"></p>
+    				  		
+  				</div>
+  	
+  			<div class="box-minmax">
+  		<button onclick="Decrease(democh3minang,myRangech3minang,'Ch3_Angle_Min')" :disabled="loading || !connected" class="btn btn-danger">Decrease</button>
+  		 <button :disabled="loading || !connected"class="btn btn-success" onclick="Increase(democh3minang,myRangech3minang,'Ch3_Angle_Min')">Increase</button>
+  		</div>
+  
+	</div>
+<br>
+
+	
+		</div>
+
+
+<div class="row">
+ 	 
+			<div >
+			  Channel 3 Maximum Angle
+			  <div class="range-slider">
+   
+			   <input  id="myRangech3maxang" class="slider" type="range" value="0" min="0" max="360">
+    			<p>Value:<span id="democh3maxang"></p>
+    				  		
+  				</div>
+  	
+  			<div class="box-minmax">
+  		<button onclick="Decrease(democh3maxang,myRangech3maxang,'Ch3_Angle_Max')" :disabled="loading || !connected" class="btn btn-danger">Decrease</button>
+  		 <button :disabled="loading || !connected"class="btn btn-success" onclick="Increase(democh3maxang,myRangech3maxang,'Ch3_Angle_Max')">Increase</button>
+  		</div>
+  
+	</div>
+<br>
+
+	
+		</div>
+
+<div class="row">
+ 	 
+			<div >
+			  Channel 4 Minimum Angle
+			  <div class="range-slider">
+   
+			   <input  id="myRangech4minang" class="slider" type="range" value="0" min="0" max="360">
+    			<p>Value:<span id="democh4minang"></p>
+    				  		
+  				</div>
+  	
+  			<div class="box-minmax">
+  		<button onclick="Decrease(democh4minang,myRangech4minang,'Ch4_Angle_Min')" :disabled="loading || !connected" class="btn btn-danger">Decrease</button>
+  		 <button :disabled="loading || !connected"class="btn btn-success" onclick="Increase(democh4minang,myRangech4minang,'Ch4_Angle_Min')">Increase</button>
+  		</div>
+  
+	</div>
+<br>
+
+	
+		</div>
+		<div class="row">
+ 	 
+			<div >
+			  Channel 4 Maximum Angle
+			  <div class="range-slider">
+   
+			   <input  id="myRangech4maxang" class="slider" type="range" value="0" min="0" max="360">
+    			<p>Value:<span id="democh4maxang"></p>
+    				  		
+  				</div>
+  	
+  			<div class="box-minmax">
+  		<button onclick="Decrease(democh4maxang,myRangech4maxang,'Ch4_Angle_Max')" :disabled="loading || !connected" class="btn btn-danger">Decrease</button>
+  		 <button :disabled="loading || !connected"class="btn btn-success" onclick="Increase(democh4maxang,myRangech4maxang,'Ch4_Angle_Max')">Increase</button>
+  		</div>
+  
+	</div>
+<br>
+
+	
+		</div>
+</div>
+
+        </div>
+         
+        <div class="content">
+          <h2>Channel 5 and 6</h2>
+          <div>
+          <div class="row">
+	<label class="containerch">Channel 5 and 6 Current Linked
+  	<input  onclick="Alterbool(Ch56_Link_Current)" id="Ch56_Link_Current" type="checkbox">
+  	<span class="checkmark"></span>
+	</label>
+<br>
+</div>
+ 	 	<div class="row">
+ 	 
+			<div >
+			  Channel 5 Current
+			  <div class="range-slider">
+   
+			   <input  id="myRangech5curr" class="slider" type="range" value="0" min="0" max="110">
+    			<p>Value:<span id="democh5curr"></p>
+    				  		
+  				</div>
+  	
+  			<div class="box-minmax">
+  		<button onclick="Decrease(democh5curr,myRangech5curr,'Ch5_Current')" :disabled="loading || !connected" class="btn btn-danger">Decrease</button>
+  		 <button :disabled="loading || !connected"class="btn btn-success" onclick="Increase(democh5curr,myRangech5curr,'Ch5_Current')">Increase</button>
+  		</div>
+  
+	</div>
+<br>
+
+	
+		</div>
+<div class="row">
+ 	 
+			<div >
+			  Channel 6 Current
+			  <div class="range-slider">
+   
+			   <input  id="myRangech6curr" class="slider" type="range" value="0" min="0" max="110">
+    			<p>Value:<span id="democh6curr"></p>
+    				  		
+  				</div>
+  	
+  			<div class="box-minmax">
+  		<button onclick="Decrease(democh6curr,myRangech6curr,'Ch6_Current')" :disabled="loading || !connected" class="btn btn-danger">Decrease</button>
+  		 <button :disabled="loading || !connected"class="btn btn-success" onclick="Increase(democh6curr,myRangech6curr,'Ch6_Current')">Increase</button>
+  		</div>
+  
+	</div>
+<br>
+
+	
+		</div>
+		
+	<div class="row">
+ 	 
+			<div >
+			  Channel 5 Pulse Width
+			  <div class="range-slider">
+   
+			   <input  id="myRangech5pw" class="slider" type="range" value="0" min="0" max="500">
+    			<p>Value:<span id="democh5pw"></p>
+    				  		
+  				</div>
+  	
+  			<div class="box-minmax">
+  		<button onclick="Decrease(democh5pw,myRangech5pw,'Ch5_Pulse_Width')" :disabled="loading || !connected" class="btn btn-danger">Decrease</button>
+  		 <button :disabled="loading || !connected"class="btn btn-success" onclick="Increase(democh5pw,myRangech5pw,'Ch5_Pulse_Width')">Increase</button>
+  		</div>
+  
+	</div>
+<br>
+	</div>
+<div class="row">
+ 	 
+			<div>
+			  Channel 6 Pulse Width
+			  <div class="range-slider">
+   
+			   <input  id="myRangech6pw" class="slider" type="range" value="0" min="0" max="500">
+    			<p>Value:<span id="democh6pw"></p>
+    				  		
+  				</div>
+  	
+  			<div class="box-minmax">
+  		<button onclick="Decrease(democh6pw,myRangech6pw,'Ch6_Pulse_Width')" :disabled="loading || !connected" class="btn btn-danger">Decrease</button>
+  		 <button :disabled="loading || !connected"class="btn btn-success" onclick="Increase(democh6pw,myRangech6pw,'Ch6_Pulse_Width')">Increase</button>
+  		</div>
+  
+	</div>
+<br>
+
+	
+		</div>
+		  <div class="row">
+<label class="containerch">Channel 5 and 6 Angle Linked
+  	<input onclick="Alterbool(Ch56_Link_Angle)" id="Ch56_Link_Angle" type="checkbox">
+  	<span class="checkmark"></span>
+	</label>
+</div>
+ 
+<div class="row">
+ 	 
+			<div >
+			  Channel 5 Minimum Angle
+			  <div class="range-slider">
+   
+			   <input  id="myRangech5minang" class="slider" type="range" value="0" min="0" max="360">
+    			<p>Value:<span id="democh5minang"></p>
+    				  		
+  				</div>
+  	
+  			<div class="box-minmax">
+  		<button onclick="Decrease(democh5minang,myRangech5minang,'Ch5_Angle_Min')" :disabled="loading || !connected" class="btn btn-danger">Decrease</button>
+  		 <button :disabled="loading || !connected"class="btn btn-success" onclick="Increase(democh5minang,myRangech5minang,'Ch5_Angle_Min')">Increase</button>
+  		</div>
+  
+	</div>
+<br>
+
+	
+		</div>
+
+
+<div class="row">
+ 	 
+			<div >
+			  Channel 5 Maximum Angle
+			  <div class="range-slider">
+   
+			   <input  id="myRangech5maxang" class="slider" type="range" value="0" min="0" max="360">
+    			<p>Value:<span id="democh5maxang"></p>
+    				  		
+  				</div>
+  	
+  			<div class="box-minmax">
+  		<button onclick="Decrease(democh5maxang,myRangech5maxang,'Ch5_Angle_Max')" :disabled="loading || !connected" class="btn btn-danger">Decrease</button>
+  		 <button :disabled="loading || !connected"class="btn btn-success" onclick="Increase(democh5maxang,myRangech5maxang,'Ch5_Angle_Max')">Increase</button>
+  		</div>
+  
+	</div>
+<br>
+
+	
+		</div>
+
+<div class="row">
+ 	 
+			<div >
+			  Channel 6 Minimum Angle
+			  <div class="range-slider">
+   
+			   <input  id="myRangech6minang" class="slider" type="range" value="0" min="0" max="360">
+    			<p>Value:<span id="democh6minang"></p>
+    				  		
+  				</div>
+  	
+  			<div class="box-minmax">
+  		<button onclick="Decrease(democh6minang,myRangech6minang,'Ch6_Angle_Min')" :disabled="loading || !connected" class="btn btn-danger">Decrease</button>
+  		 <button :disabled="loading || !connected"class="btn btn-success" onclick="Increase(democh6minang,myRangech6minang,'Ch6_Angle_Min')">Increase</button>
+  		</div>
+  
+	</div>
+<br>
+
+	
+		</div>
+		<div class="row">
+ 	 
+			<div >
+			  Channel 6 Maximum Angle
+			  <div class="range-slider">
+   
+			   <input  id="myRangech6maxang" class="slider" type="range" value="0" min="0" max="360">
+    			<p>Value:<span id="democh6maxang"></p>
+    				  		
+  				</div>
+  	
+  			<div class="box-minmax">
+  		<button onclick="Decrease(democh6maxang,myRangech6maxang,'Ch6_Angle_Max')" :disabled="loading || !connected" class="btn btn-danger">Decrease</button>
+  		 <button :disabled="loading || !connected"class="btn btn-success" onclick="Increase(democh6maxang,myRangech6maxang,'Ch6_Angle_Max')">Increase</button>
+  		</div>
+  
+	</div>
+<br>
+
+	
+		</div>
+</div>
+
+        </div>
+         
+  <div class="content">
+          <h2>Channel 7 and 8</h2>
+          <div>
+          <div class="row">
+	<label class="containerch">Channel 7 and 8 Current Linked
+  	<input  onclick="Alterbool(Ch78_Link_Current)" id="Ch78_Link_Current" type="checkbox">
+  	<span class="checkmark"></span>
+	</label>
+<br>
+</div>
+ 	 	<div class="row">
+ 	 
+			<div >
+			  Channel 7 Current
+			  <div class="range-slider">
+   
+			   <input  id="myRangech7curr" class="slider" type="range" value="0" min="0" max="110">
+    			<p>Value:<span id="democh7curr"></p>
+    				  		
+  				</div>
+  	
+  			<div class="box-minmax">
+  		<button onclick="Decrease(democh7curr,myRangech7curr,'Ch7_Current')" :disabled="loading || !connected" class="btn btn-danger">Decrease</button>
+  		 <button :disabled="loading || !connected"class="btn btn-success" onclick="Increase(democh7curr,myRangech7curr,'Ch7_Current')">Increase</button>
+  		</div>
+  
+	</div>
+<br>
+
+	
+		</div>
+<div class="row">
+ 	 
+			<div >
+			  Channel 8 Current
+			  <div class="range-slider">
+   
+			   <input  id="myRangech8curr" class="slider" type="range" value="0" min="0" max="110">
+    			<p>Value:<span id="democh8curr"></p>
+    				  		
+  				</div>
+  	
+  			<div class="box-minmax">
+  		<button onclick="Decrease(democh8curr,myRangech8curr,'Ch8_Current')" :disabled="loading || !connected" class="btn btn-danger">Decrease</button>
+  		 <button :disabled="loading || !connected"class="btn btn-success" onclick="Increase(democh8curr,myRangech8curr,'Ch8_Current')">Increase</button>
+  		</div>
+  
+	</div>
+<br>
+
+	
+		</div>
+		
+	<div class="row">
+ 	 
+			<div >
+			  Channel 7 Pulse Width
+			  <div class="range-slider">
+   
+			   <input  id="myRangech7pw" class="slider" type="range" value="0" min="0" max="500">
+    			<p>Value:<span id="democh7pw"></p>
+    				  		
+  				</div>
+  	
+  			<div class="box-minmax">
+  		<button onclick="Decrease(democh7pw,myRangech7pw,'Ch7_Pulse_Width')" :disabled="loading || !connected" class="btn btn-danger">Decrease</button>
+  		 <button :disabled="loading || !connected"class="btn btn-success" onclick="Increase(democh7pw,myRangech7pw,'Ch7_Pulse_Width')">Increase</button>
+  		</div>
+  
+	</div>
+<br>
+	</div>
+<div class="row">
+ 	 
+			<div>
+			  Channel 8 Pulse Width
+			  <div class="range-slider">
+   
+			   <input  id="myRangech8pw" class="slider" type="range" value="0" min="0" max="500">
+    			<p>Value:<span id="democh8pw"></p>
+    				  		
+  				</div>
+  	
+  			<div class="box-minmax">
+  		<button onclick="Decrease(democh8pw,myRangech8pw,'Ch8_Pulse_Width')" :disabled="loading || !connected" class="btn btn-danger">Decrease</button>
+  		 <button :disabled="loading || !connected"class="btn btn-success" onclick="Increase(democh8pw,myRangech8pw,'Ch8_Pulse_Width')">Increase</button>
+  		</div>
+  
+	</div>
+<br>
+
+	
+		</div>
+		  <div class="row">
+<label class="containerch">Channel 7 and 8 Angle Linked
+  	<input onclick="Alterbool(Ch78_Link_Angle)" id="Ch78_Link_Angle" type="checkbox">
+  	<span class="checkmark"></span>
+	</label>
+</div>
+ 
+<div class="row">
+ 	 
+			<div >
+			  Channel 7 Minimum Angle
+			  <div class="range-slider">
+   
+			   <input  id="myRangech7minang" class="slider" type="range" value="0" min="0" max="360">
+    			<p>Value:<span id="democh7minang"></p>
+    				  		
+  				</div>
+  	
+  			<div class="box-minmax">
+  		<button onclick="Decrease(democh7minang,myRangech7minang,'Ch7_Angle_Min')" :disabled="loading || !connected" class="btn btn-danger">Decrease</button>
+  		 <button :disabled="loading || !connected"class="btn btn-success" onclick="Increase(democh7minang,myRangech7minang,'Ch7_Angle_Min')">Increase</button>
+  		</div>
+  
+	</div>
+<br>
+
+	
+		</div>
+
+
+<div class="row">
+ 	 
+			<div >
+			  Channel 7 Maximum Angle
+			  <div class="range-slider">
+   
+			   <input  id="myRangech7maxang" class="slider" type="range" value="0" min="0" max="360">
+    			<p>Value:<span id="democh7maxang"></p>
+    				  		
+  				</div>
+  	
+  			<div class="box-minmax">
+  		<button onclick="Decrease(democh7maxang,myRangech7maxang,'Ch7_Angle_Max')" :disabled="loading || !connected" class="btn btn-danger">Decrease</button>
+  		 <button :disabled="loading || !connected"class="btn btn-success" onclick="Increase(democh7maxang,myRangech7maxang,'Ch7_Angle_Max')">Increase</button>
+  		</div>
+  
+	</div>
+<br>
+
+	
+		</div>
+
+<div class="row">
+ 	 
+			<div >
+			  Channel 8 Minimum Angle
+			  <div class="range-slider">
+   
+			   <input  id="myRangech8minang" class="slider" type="range" value="0" min="0" max="360">
+    			<p>Value:<span id="democh8minang"></p>
+    				  		
+  				</div>
+  	
+  			<div class="box-minmax">
+  		<button onclick="Decrease(democh8minang,myRangech8minang,'Ch8_Angle_Min')" :disabled="loading || !connected" class="btn btn-danger">Decrease</button>
+  		 <button :disabled="loading || !connected"class="btn btn-success" onclick="Increase(democh8minang,myRangech8minang,'Ch8_Angle_Min')">Increase</button>
+  		</div>
+  
+	</div>
+<br>
+
+	
+		</div>
+		<div class="row">
+ 	 
+			<div >
+			  Channel 8 Maximum Angle
+			  <div class="range-slider">
+   
+			   <input  id="myRangech8maxang" class="slider" type="range" value="0" min="0" max="360">
+    			<p>Value:<span id="democh8maxang"></p>
+    				  		
+  				</div>
+  	
+  			<div class="box-minmax">
+  		<button onclick="Decrease(democh8maxang,myRangech8maxang,'Ch8_Angle_Max')" :disabled="loading || !connected" class="btn btn-danger">Decrease</button>
+  		 <button :disabled="loading || !connected"class="btn btn-success" onclick="Increase(democh8maxang,myRangech8maxang,'Ch8_Angle_Max')">Increase</button>
+  		</div>
+  
+	</div>
+<br>
+
+	
+		</div>
+</div>
+
+        </div>
+           <div class="content">
+          <div class="row">
+	<label class="containerch">Channel 1 and 2 Enable
+  	<input   onclick="Alterbool(Ch12_Enable)" id="Ch12_Enable" type="checkbox">
+  	<span class="checkmark"></span>
+	</label>
+<br>
+</div>
+<div class="row">
+	<label class="containerch">Channel 3 and 4 Enable
+  	<input   onclick="Alterbool(Ch34_Enable)" id="Ch34_Enable" type="checkbox">
+  	<span class="checkmark"></span>
+	</label>
+<br>
+</div>
+<div class="row">
+	<label class="containerch">Channel 5 and 6 Enable
+  	<input   onclick="Alterbool(Ch56_Enable)" id="Ch56_Enable" type="checkbox">
+  	<span class="checkmark"></span>
+	</label>
+<br>
+</div>
+<div class="row">
+	<label class="containerch">Channel 7 and 8 Enable
+  	<input  onclick="Alterbool(Ch78_Enable)" id="Ch78_Enable" type="checkbox">
+  	<span class="checkmark"></span>
+	</label>
+<br>
+</div>
+<div class="row">
+ 	 
+			<div >
+			 Shift
+			  <div class="range-slider">
+   
+			   <input  id="shift" class="slider" type="range" value="0" min="0" max="100">
+    			<p>Value:<span id="valshift"></p>
+    				  		
+  				</div>
+  	
+  			<div class="box-minmax">
+  		<button onclick="updatepreset(valshift,shift,'Shift','decrease')" :disabled="loading || !connected" class="btn btn-danger">Decrease</button>
+  		 <button :disabled="loading || !connected"class="btn btn-success" onclick="updatepreset(valshift,shift,'Shift','increase')">Increase</button>
+  		</div>
+  
+	</div>
+<br>
+
+	
+		</div>
+		
+		<div class="row">
+	<label class="containerch">Mark Assistence
+  	<input  onclick="Alterbool(Mark_assistance)" id="Mark_assistance" type="checkbox">
+  	<span class="checkmark"></span>
+	</label>
+<br>
+</div>
+<div class="row">
+	<label class="containerch">Auto Control Enable
+  	<input onclick="Alterbool(AutoC_Enable)" id="AutoC_Enable" type="checkbox">
+  	<span class="checkmark"></span>
+	</label>
+<br>
+</div>
+<div class="row">
+ 	 
+			<div >
+			 Auto Control Shift
+			  <div class="range-slider">
+   
+			   <input  id="autocontrolshift" class="slider" type="range" value="0" min="0" max="80">
+    			<p>Value:<span id="valautocontrolshift"></p>
+    				  		
+  				</div>
+  	
+  		<div class="box-minmax">
+  		<button onclick="updatepreset(valautocontrolshift,autocontrolshift,'AutoC_Enable','decrease')" :disabled="loading || !connected" class="btn btn-danger">Decrease</button>
+  		 <button :disabled="loading || !connected"class="btn btn-success" onclick="updatepreset(valautocontrolshift,autocontrolshift,'AutoC_Enable','increase')">Increase</button>
+  		</div>
+  
+	</div>
+<br>
+
+	
+		</div>
+
+<div class="row">
+ 	 
+			<div >
+			 Auto Control Velocity
+			  <div class="range-slider">
+   
+			   <input  id="autocontrolvelocity" class="slider" type="range" value="0" min="0" max="150">
+    			<p>Value:<span id="valautocontrolvelocity"></p>
+    				  		
+  				</div>
+  	
+  				<div class="box-minmax">
+  		<button onclick="updatepreset(valautocontrolvelocity,autocontrolvelocity,'AutoC_Velocity','decrease')" :disabled="loading || !connected" class="btn btn-danger">Decrease</button>
+  		 <button :disabled="loading || !connected"class="btn btn-success" onclick="updatepreset(updatepreset(valautocontrolvelocity,autocontrolvelocity,'AutoC_Velocity','increase')">Increase</button>
+  		</div>
+  
+	</div>
+<br>
+
+	
+		</div>
+        </div>
+      </div>
+    </div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+ 				
+							
+
+</div>
+
+
+
+		</div>
+		
+		
+		<!--==================================================================
+			JavaScript Files
+		==================================================================-->
+		<script src='js/jquery.min.js' ></script>
+		<script src='js/jquery.fitvids.js' ></script>
+		<script src='js/owl.carousel.min.js' ></script>
+		<script src='js/jquery.magnific-popup.min.js' ></script>
+		<script src='js/validator.min.js' ></script>
+		<script src='js/script.js' ></script>
+		
+	<script type="text/javascript" src="main.js">
+
+	</script>	
+	</body>
+</html>
