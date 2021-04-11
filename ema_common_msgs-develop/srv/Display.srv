@@ -1,7 +1,0 @@
-string message # the output message
-uint8 line     # vertical placement
-uint8 position # horizontal placement
-bool clear     # indicate display cleaning
----
-bool success   # indicate successful run of service
-string message # informational, e.g. for error messages

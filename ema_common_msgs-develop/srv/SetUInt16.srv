@@ -1,4 +1,0 @@
-uint16 data    # e.g. for setting integer parameters
----
-bool success   # indicate successful run of service
-string message # informational, e.g. for error messages
